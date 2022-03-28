@@ -15,20 +15,19 @@
     <!-- Link to CSS file -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Title -->
-    <title>User Input with PHP</title>
+    <title>Area of a Triangle in PHP</title>
   </head>
   <body>
+		<!-- php echo to print the html to the page -->
     <?php 
-			echo "<h1>User Input in PHP</h1>";
+			echo "<h1>Area of a Triangle in PHP</h1>";
 			echo "<h3>This program will calculate the area of a triangle.</h3>";
 		?>
-		<!-- Get the base and height from the user -->
+		<!-- form to get the base and height from the user -->
     <form action="./results.php" method="post" target="results">
-      <label for="base">Base 
-			(mm):</label>
+      <label for=lblBase">Base (mm):</label>
       <input type="text" id="base" placeholder="Enter the base (mm)" name="base"><br><br>
-      <label for="height">Height 
-			(mm):</label>
+      <label for="lblHeight">Height (mm):</label>
       <input type="text" id="height" placeholder="Enter the height (mm)" name="height"><br><br>
       <input type="submit" value="Calculate Area">
 		</form>
